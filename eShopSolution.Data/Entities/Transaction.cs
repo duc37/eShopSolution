@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Transactions;
 
 namespace eShopSolution.Data.Entities
 {
@@ -14,7 +15,7 @@ namespace eShopSolution.Data.Entities
         public decimal Fee { set; get; }
         public string Result { set; get; }
         public string Message { set; get; }
-        public TransactionStatus Status { set; get; }
+        public System.Transactions.TransactionStatus Status { set; get; }
         public string Provider { set; get; }
 
     }
